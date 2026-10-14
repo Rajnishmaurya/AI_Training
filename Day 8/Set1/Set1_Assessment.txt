@@ -1,0 +1,209 @@
+-- Section A — Basic SELECT
+-- 1. Display all documents in the container.
+-- SELECT * from c
+-- 2. Display only station_name , city , and status .
+-- SELECT c.station_name,c.city,c.status FROM c
+-- 3. Display station_name , capacity_kw , daily_sessions , and revenue .
+-- SELECT c.station_name,c.capacity_kw,c.daily_sessions,c.revenue from c
+-- 4. Display id and station_name for every station.
+-- SELECT c.id,c.station_name from c
+
+-- Section B — WHERE Filters
+-- 5. Display all stations in Hyderabad.
+-- SELECT * from c
+-- where c.city="Hyderabad"
+-- 6. Display all stations in Mumbai.
+-- SELECT * from c 
+-- where c.city="Mumbai"
+-- 7. Display all stations whose status is Maintenance .
+-- SELECT * from c 
+-- where c.status="Maintenance"
+-- 8. Display all Fast charging stations.
+-- SELECT * from c 
+-- where c.station_type="Fast"
+-- 9. Display all stations whose connector type is CCS2 .
+-- select * from c 
+-- where c.connector_type="CCS2"
+
+-- Section C — Numeric Filters
+-- 10. Display stations whose capacity is greater than 100 .
+-- select * from c 
+-- where c.capacity_kw>100
+-- 11. Display stations whose revenue is greater than 15000 .
+-- select * FROM c 
+-- where c.revenue>15000
+-- 12. Display stations having more than 40 daily sessions.
+-- select * from c 
+-- where c.daily_sessions>40
+-- 13. Display stations whose uptime is below 96 .
+-- select * from c 
+-- where c.uptime_percent<96
+-- 14. Display stations whose capacity is between 50 and 120 .
+-- select * from c 
+-- where c.capacity_kw BETWEEN 50 AND 120
+-- 15. Display stations whose revenue is below 10000 .
+-- select * from c 
+-- where c.revenue <10000
+
+-- Section D — AND Conditions
+-- 16. Display stations that are Fast and Active .
+-- select * from c 
+-- where c.station_type="Fast" and c.status="Active"
+-- 17. Display Hyderabad stations whose revenue is above 10000 .
+-- select * from c 
+-- where c.city="Hyderabad" and c.revenue >10000
+-- 18. Display stations whose capacity is greater than 100 and daily sessions are greater than 40 .
+-- select * from c 
+-- where c.capacity_kw>100 and c.daily_sessions>40
+-- 19. Display Active stations whose uptime is greater than 97 .
+-- select * from c 
+-- where c.status="Active" and c.uptime_percent>97
+-- 20. Display Standard stations whose revenue is below 10000 .
+-- select * from c 
+-- where c.station_type="Standard" and c.revenue<10000
+
+-- Section E — OR Conditions
+-- 21. Display stations located in Hyderabad or Bengaluru.
+-- select * from c 
+-- where c.city in ("Hyderabad","Bengaluru")
+-- 22. Display stations whose zone is North or South.
+-- select * from c 
+-- where c.zone in ("North","South")
+-- 23. Display stations that are Fast or have revenue above 20000 .
+-- select * from c 
+-- where c.station_type="Fast" or c.revenue>20000
+-- 24. Display stations located in Mumbai, Delhi, or Chennai.
+-- select * from c 
+-- where c.city in ("Mumbai","Delhi","Chennai")
+
+-- Section F — ORDER BY
+-- 25. Display all stations ordered by revenue from lowest to highest.
+-- select * from c 
+-- order by c.revenue ASC
+-- 26. Display all stations ordered by revenue from highest to lowest.
+-- select * from c 
+-- order by c.revenue DESC
+-- 27. Display stations ordered by daily sessions from highest to lowest.
+-- select * from c 
+-- order by c.daily_sessions DESC
+-- 28. Display stations ordered by uptime percentage from lowest to highest.
+-- select * from c 
+-- order by c.uptime_percent ASC
+-- 29. Display stations ordered first by city and then by revenue.
+-- select * from c 
+-- order by c.city ASC , c.revenue DESC
+
+-- Section G — COUNT
+-- 30. Count the total number of charging stations.
+-- SELECT VALUE COUNT(c.id) FROM c
+-- 31. Count the number of Active stations.
+-- select value count(1) from c 
+-- where c.status="Active"
+-- 32. Count the number of Fast stations.
+-- select value count(1) from c 
+-- where c.station_type="Fast"
+-- 33. Count the number of stations in Pune.
+-- select value count(1) from c 
+-- where c.city="Pune"
+-- 34. Count the number of stations whose revenue is greater than 15000 .
+-- select value count(1) from c 
+-- where c.revenue>15000
+
+-- Section H — GROUP BY
+-- 35. Count the number of stations in each city.
+-- select c.city,count(1) as number_of_stations from c 
+-- group by(c.city)
+-- 36. Count the number of stations by station_type .
+-- select c.station_type,count(c.station_type) as number_of_stations from c 
+-- group by c.station_type
+-- 37. Count the number of stations by status .
+-- select c.status, count(c.status) as number_of_stations from c 
+-- group by c.status
+-- 38. Find the total revenue for each city.
+-- select c.city, sum(c.revenue) as total_revenue from c 
+-- group by c.city
+-- 39. Find the average revenue for each station type.
+-- select c.station_type , avg(c.revenue) as average_revenue from c 
+-- group by c.station_type
+-- 40. Find the average uptime percentage for each city.
+-- select c.city, avg(c.uptime_percent) as average_uptime from c 
+-- group by c.city
+-- 41. Find the total number of daily sessions for each city.
+-- select c.city , sum(c.daily_sessions) as daily_total_sessions from c 
+-- group by c.city
+-- 42. Find the average charging capacity for each station type.
+-- select c.station_type, avg(c.capacity_kw) as average_charging_capacity from c 
+-- group by c.station_type
+
+
+-- Section I — GROUP BY with Filters
+-- 43. Find total revenue by city using only Active stations.
+-- select c.city , sum(c.revenue) as total_revenue from c 
+-- where c.status="Active"
+-- group by c.city
+-- 44. Count Fast stations in each city.
+-- select c.city, count(c.station_type) as total_fast_stations from c 
+-- where c.station_type="Fast"
+-- group by c.city
+-- 45. Find average revenue by city for stations whose revenue is above 8000 .
+-- select c.city, avg(c.revenue) as average_revenue from c 
+-- where c.revenue > 8000
+-- group by c.city
+-- 46. Find total daily sessions grouped by station type.
+-- select c.station_type,sum(c.daily_sessions) as total_daily_sessions from c 
+-- group by c.station_type
+
+
+-- Section J — Combined Queries
+-- 47. Find the top five stations based on revenue.
+-- select top 5 * from c 
+-- Order by c.revenue DESC 
+-- 48. Find the top three stations based on daily sessions.
+-- select top 3 * from c 
+-- order by c.daily_sessions DESC
+-- 49. Display Active Fast stations ordered by revenue from highest to lowest.
+-- select * from c 
+-- where c.status="Active" and c.station_type="Fast"
+-- order by c.revenue DESC
+-- 50. Display stations whose revenue is greater than 12000 and uptime is greater than 97 , ordered by revenue from highest to lowest.
+-- select * from c 
+-- where c.revenue>12000 and c.uptime_percent>97 
+-- order by c.revenue DESC
+-- 51. Display Hyderabad or Bengaluru stations having more than 30 daily sessions.
+-- select * from c 
+-- where c.city in ("Bengaluru","Hyderabad") and c.daily_sessions>30
+-- 52. Display Maintenance stations ordered by uptime percentage from lowest to highest.
+-- select * from c 
+-- where c.status="Maintenance" 
+-- order by c.uptime_percent ASC
+-- 53. Display station_name , city , revenue , and uptime_percent for stations whose revenue is greater than 15000 .
+-- select c.station_name,c.city,c.revenue,c.uptime_percent from c 
+-- where c.revenue>15000
+-- 54. Display Fast stations having a capacity of at least 120 , ordered by capacity from highest to lowest.
+-- select * from c 
+-- where c.station_type="Fast" and c.capacity_kw>=120
+-- order by c.capacity_kw DESC
+
+
+-- Section K — Business Questions
+-- 55. Write a query to determine which city has the highest total revenue.
+-- SELECT top 1
+--     c.city,
+--     SUM(c.revenue) AS total_revenue
+-- FROM c
+-- GROUP BY c.city
+-- 56. Write a query to determine which station has the highest revenue.
+-- SELECT TOP 1 c.station_name,c.revenue FROM c
+-- ORDER BY c.revenue DESC
+-- 57. Write a query to determine which station has the lowest uptime percentage.
+-- select top 1 c.station_name,c.uptime_percent from c 
+-- order by c.uptime_percent asc
+-- 58. Write a query to determine which station type has the highest average revenue.
+-- select top 1 c.station_type,avg(c.revenue) as highest_average_revenue from c 
+-- group by c.station_type
+-- 59. Write a query to determine which city has the highest total number of daily charging sessions.
+-- select top 1 c.city,sum(c.daily_sessions) as highest_daily_sessions from c 
+-- group by c.city
+-- 60. Write a query to determine how many stations are currently under maintenance
+-- select count(1) as "Station Under Maintenance" from c 
+-- where c.status="Maintenance"
