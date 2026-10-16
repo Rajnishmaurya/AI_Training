@@ -6,8 +6,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Day 7/Day7_Assignments_Set1_13th_Oct/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Day 7/Set1/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Day 7/Set2/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="~\PycharmProjects\PythonProject\AI_Training\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
