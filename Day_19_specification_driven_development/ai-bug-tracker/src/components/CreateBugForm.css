@@ -1,0 +1,156 @@
+
+.bug-form-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  background: rgba(20, 32, 53, 0.42);
+}
+
+.bug-form-modal {
+  width: 100%;
+  max-width: 580px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding: 28px;
+  border: 1px solid #e8edf3;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(20, 32, 53, 0.18);
+}
+
+.bug-form-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.bug-form-heading h2 {
+  margin: 0 0 8px;
+  color: #172033;
+  font-size: 22px;
+}
+
+.bug-form-heading p {
+  margin: 0;
+  color: #8490a3;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.form-close-button {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 8px;
+  background: #f3f6fa;
+  color: #64748b;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  color: #354258;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #dfe5ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #25324a;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: #6695f5;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #a0aaba;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.form-error {
+  margin: 0 0 16px;
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.bug-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.form-cancel-button,
+.form-submit-button {
+  padding: 11px 17px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-cancel-button {
+  border: 1px solid #dfe5ee;
+  background: #ffffff;
+  color: #526078;
+}
+
+.form-submit-button {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.form-submit-button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 520px) {
+  .bug-form-modal {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
