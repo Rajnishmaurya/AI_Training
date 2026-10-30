@@ -7,6 +7,8 @@
       <excludeFolder url="file://$MODULE_DIR$/Day 7/Set1/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Day 7/Set2/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 10/Pydantic/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Day_19_specification_driven_development/ai-bug-tracker/backend/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="~\PycharmProjects\PythonProject\AI_Training\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
