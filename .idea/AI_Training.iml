@@ -9,6 +9,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Day 10/Pydantic/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/Day_19_specification_driven_development/ai-bug-tracker/backend/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Day_20_cybersecurity_issues_reveiw/Simple_Python_RAG_PyCharm/Simple_Python_RAG_PyCharm/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Day_20_cybersecurity_issues_reveiw/Simple_Python_RAG_PyCharm/__MACOSX/Simple_Python_RAG_PyCharm/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="~\PycharmProjects\PythonProject\AI_Training\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
