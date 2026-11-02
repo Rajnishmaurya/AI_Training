@@ -1,0 +1,4 @@
+tiktoken
+sentence-transformers
+chromadb
+anthropic

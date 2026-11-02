@@ -1,0 +1,33 @@
+[
+  {
+    "question": "How many annual leave days do employees receive?",
+    "must_include": [
+      "16"
+    ]
+  },
+  {
+    "question": "Which days must employees work from the office?",
+    "must_include": [
+      "tuesday",
+      "thursday"
+    ]
+  },
+  {
+    "question": "How quickly should a lost company laptop be reported?",
+    "must_include": [
+      "one hour|1 hour|1-hour|one-hour"
+    ]
+  },
+  {
+    "question": "How quickly are Priority 1 incidents acknowledged?",
+    "must_include": [
+      "30 minutes|30 min|thirty minutes"
+    ]
+  },
+  {
+    "question": "What is the company travel allowance per day?",
+    "must_include": [
+      "could not find|cannot find|can't find|couldn't find|not found|no information|not mentioned|does not"
+    ]
+  }
+]

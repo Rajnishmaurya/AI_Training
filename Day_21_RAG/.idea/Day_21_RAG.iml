@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/RAG_Claude/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/RAG_practice/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Simple_Python_RAG_PyCharm/Simple_Python_RAG_PyCharm/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Simple_Python_RAG_PyCharm/__MACOSX/Simple_Python_RAG_PyCharm/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/rag_lab_ui/.venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="~\PycharmProjects\PythonProject\AI_Training\Day_21_RAG\.venv" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PackageRequirementsSettings" />
+  <component name="PyDocumentationSettings">
+    <option name="format" value="PLAIN" />
+  </component>
+  <component name="ReSTService" />
+  <component name="TestRunnerService" />
+</module>
