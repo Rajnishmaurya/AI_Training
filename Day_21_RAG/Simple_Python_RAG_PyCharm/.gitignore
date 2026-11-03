@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 chroma_db/
 .env.example
+rag-lab-ui/node_modules/

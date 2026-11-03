@@ -1,0 +1,10 @@
+EY principle,Classroom check,Status
+Accountability,Who owns the RAG app and reviews failures?,REQUIRES HUMAN OWNER
+Data protection,Avoid sending employee identifiers to external models,MANUAL REVIEW
+Reliability,Run 08_benchmark_retrieval.py to compare question results,TEST AVAILABLE
+Security,Keep API keys out of source control,CHECK CONFIGURATION
+Transparency,Tell users that generated answers are AI-generated,ADD UI DISCLOSURE
+Explainability,Show retrieved source chunk IDs and excerpts,DEMO AVAILABLE
+Fairness,Compare equivalent policy questions across groups,DEMO AVAILABLE
+Compliance,"Confirm organizational, legal and data-retention rules",MANUAL REVIEW
+Sustainability,Compare model/infrastructure resource needs,MANUAL REVIEW
