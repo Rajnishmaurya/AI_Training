@@ -1,0 +1,34 @@
+
+# -----------------------------
+# LangChain
+# -----------------------------
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-huggingface
+
+# -----------------------------
+# LlamaIndex
+# -----------------------------
+llama-index
+llama-index-vector-stores-chroma
+llama-index-embeddings-huggingface
+
+# -----------------------------
+# Haystack
+# -----------------------------
+haystack-ai
+sentence-transformers
+haystack-experimental
+
+# -----------------------------
+# Vector Database
+# -----------------------------
+chromadb
+
+# -----------------------------
+# Tokenization
+# -----------------------------
+tiktoken
