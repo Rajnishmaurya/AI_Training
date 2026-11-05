@@ -1,0 +1,17 @@
+[
+    {
+        "code": "SAVE10",
+        "discount": 10,
+        "active": true
+    },
+    {
+        "code": "WORKSHOP10",
+        "discount": 10,
+        "active": true
+    },
+    {
+        "code": "PYTHON10",
+        "discount": 10,
+        "active": true
+    }
+]
