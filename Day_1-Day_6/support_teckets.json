@@ -1,0 +1,31 @@
+[
+  {
+    "ticket_id": "T101",
+    "customer": {
+      "name": "Elena",
+      "city": "Goa"
+    },
+    "issue": "Payment failed",
+    "priority": "High",
+    "tags": ["payment", "mobile"]
+  },
+  {
+    "ticket_id": "T102",
+    "customer": {
+      "name": "Kabir",
+      "city": "Lucknow"
+    },
+    "issue": "Unable to login",
+    "tags": ["login"]
+  },
+  {
+    "ticket_id": "T103",
+    "customer": {
+      "name": "Zoya",
+      "city": "Indore"
+    },
+    "issue": "Order delayed",
+    "priority": "Medium",
+    "tags": ["delivery", "delay"]
+  }
+]
