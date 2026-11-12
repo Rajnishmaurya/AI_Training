@@ -1,0 +1,185 @@
+[
+  {
+    "request_id": "RET201",
+    "order_id": "ORD-7301",
+    "product": "Wireless Keyboard",
+    "requested_amount": 1499,
+    "eligibility_findings": {
+      "failed_conditions": [],
+      "summary": "The return request RET201 meets all eligibility requirements for automatic approval: the product amount is below Rs.25,000, the request is within 30 days of delivery, the invoice is available, the item is unopened, there are no previous returns in the last 90 days, and no high-risk concern is indicated. Therefore, this return can be approved automatically without escalation."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The return request is within a reasonable timeframe and for a non-defective unopened item, with no previous returns in the last 90 days. The amount is moderate, and the return reason is legitimate. Missing photo evidence is acceptable given the item is unopened and invoice is available."
+    },
+    "approval_route": "Automatic",
+    "final_decision": "AUTO_APPROVED",
+    "customer_communication_draft": "Dear Customer,\n\nWe are pleased to inform you that your refund request for the Wireless Keyboard (order ORD-7301) has been approved. We will now proceed to the next step in processing your request.\n\nThank you for your patience and understanding.\n\nBest regards,  \nCustomer Service Team"
+  },
+  {
+    "request_id": "RET202",
+    "order_id": "ORD-7302",
+    "product": "Gaming Laptop",
+    "requested_amount": 79999,
+    "eligibility_findings": {
+      "failed_conditions": [
+        "Amount Rs.79,999 is not below Rs.25,000",
+        "Item condition 'used' is not unopened or documented-damaged"
+      ],
+      "summary": "The return request does not meet the automatic approval criteria because the product amount of Rs.79,999 exceeds the Rs.25,000 limit, and the item is used rather than unopened or documented as damaged. Therefore, this request must be escalated for human review."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The return request for a high-value item is within a reasonable time frame and includes both invoice and photo evidence. There is no unusual return frequency, and the item condition and reason are plausible. Overall, the risk of fraud appears low."
+    },
+    "approval_route": "Human Review",
+    "final_decision": "MANAGER_APPROVED",
+    "customer_communication_draft": "Dear Customer, \n\nWe are pleased to inform you that your refund request for the Gaming Laptop (order ORD-7302) has been approved. We will now proceed to the next step in the processing. \n\nThank you for your patience and understanding.  \n\nBest regards,  \n[Your Company Name]"
+  },
+  {
+    "request_id": "RET203",
+    "order_id": "ORD-7303",
+    "product": "Ceramic Dinner Set",
+    "requested_amount": 2499,
+    "eligibility_findings": {
+      "failed_conditions": [],
+      "summary": "The return request RET203 meets all eligibility requirements for automatic approval: the product amount is below Rs. 25,000, the request is within 30 days of delivery, the invoice is available, the item is damaged with photo evidence, and the customer has fewer than 3 previous returns in the last 90 days. There is no mention of any HIGH-risk concern by the Risk Agent. Therefore, this replacement request is automatically approved."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The return request is for a damaged item within a reasonable timeframe (9 days), with photo evidence and an available invoice. The customer has only one previous return in the last 90 days, and the item value is moderate, indicating low risk."
+    },
+    "approval_route": "Automatic",
+    "final_decision": "AUTO_APPROVED",
+    "customer_communication_draft": "Dear Customer,\n\nThank you for contacting us regarding your Ceramic Dinner Set (order ORD-7303). We are pleased to inform you that your replacement request has been approved and will now proceed to the next processing step.\n\nWe appreciate your patience and will keep you informed of any updates.\n\nBest regards,  \n[Your Company Name] Customer Service Team"
+  },
+  {
+    "request_id": "RET204",
+    "order_id": "ORD-7304",
+    "product": "Travel Suitcase",
+    "requested_amount": 4599,
+    "eligibility_findings": {
+      "failed_conditions": [
+        "Item damaged but no supporting photographs"
+      ],
+      "summary": "The return request RET204 does not meet the eligibility requirements for automatic approval because the item is damaged but no supporting photographs have been provided, which violates condition 4. Although the amount, days since delivery, invoice availability, and previous returns meet the policy criteria, the lack of photo evidence requires this request to be escalated for human review."
+    },
+    "risk_assessment": {
+      "level": "MEDIUM",
+      "details": "RISK_LEVEL: MEDIUM  \nASSESSMENT: The return is for a high-value item reported as damaged, but no photo evidence was provided, increasing verification difficulty. However, the customer has no previous returns in the last 90 days and the request is made shortly after delivery, reducing suspicion of abuse."
+    },
+    "approval_route": "Human Review",
+    "final_decision": "MANAGER_APPROVED",
+    "customer_communication_draft": "Dear Customer,\n\nThank you for contacting us regarding your order ORD-7304. We are pleased to inform you that your refund request for the Travel Suitcase has been approved and will proceed to the next processing step.\n\nWe appreciate your patience and will keep you updated on the progress.\n\nBest regards,  \nCustomer Service Team"
+  },
+  {
+    "request_id": "RET205",
+    "order_id": "ORD-7305",
+    "product": "Yoga Mat",
+    "requested_amount": 1999,
+    "eligibility_findings": {
+      "failed_conditions": [
+        "Requested 44 days after delivery (limit 30)"
+      ],
+      "summary": "The return request RET205 does not meet the eligibility requirements because it was made 44 days after delivery, exceeding the 30-day limit specified in the policy. Although the product amount, invoice availability, item condition, and previous returns meet the criteria, the delayed request requires escalation for human review."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The return request is low risk as there is no unusual return frequency, the item is unopened, and an invoice is available. The item value is moderate, and the reason given is plausible, with no missing critical evidence for this type of return."
+    },
+    "approval_route": "Human Review",
+    "final_decision": "MANAGER_APPROVED",
+    "customer_communication_draft": "Dear Customer, \n\nWe are pleased to inform you that your refund request for the Yoga Mat (order ORD-7305) has been approved. We will now proceed to the next step in the processing. \n\nThank you for your patience and understanding. \n\nBest regards,  \n[Your Company Name] Customer Support"
+  },
+  {
+    "request_id": "RET206",
+    "order_id": "ORD-7306",
+    "product": "Desk Lamp",
+    "requested_amount": 3299,
+    "eligibility_findings": {
+      "failed_conditions": [
+        "4 previous returns in 90 days (must be fewer than 3)"
+      ],
+      "summary": "The return request RET206 does not meet the eligibility requirements due to exceeding the allowed number of previous returns in the last 90 days, with 4 returns instead of fewer than 3. All other criteria, including amount, request timing, invoice availability, item condition, and photo evidence, are satisfied. Therefore, this request must be escalated for human review."
+    },
+    "risk_assessment": {
+      "level": "MEDIUM",
+      "details": "RISK_LEVEL: MEDIUM  \nASSESSMENT: The return request is for a relatively high-value item and the customer has a high frequency of returns within 90 days, which raises some concern. However, the return is within a reasonable timeframe, unopened, with invoice and photo evidence provided, reducing the overall risk."
+    },
+    "approval_route": "Human Review",
+    "final_decision": "MANAGER_REJECTED",
+    "customer_communication_draft": "Dear Customer,\n\nThank you for reaching out regarding your Desk Lamp from order ORD-7306. After careful consideration, we are unable to approve your replacement request. \n\nWe appreciate your understanding and are here to assist with any other questions you may have.\n\nBest regards,  \n[Your Company Name] Customer Support Team"
+  },
+  {
+    "request_id": "RET207",
+    "order_id": "ORD-7307",
+    "product": "Coffee Grinder",
+    "requested_amount": 6999,
+    "eligibility_findings": {
+      "failed_conditions": [
+        "Customer invoice not available"
+      ],
+      "summary": "The return request RET207 does not meet the eligibility requirements because the customer invoice is not available, which is mandatory for automatic approval. Although the product amount is below Rs. 25,000, the request is within 30 days, the item is unopened, and there are no previous returns, the lack of an invoice means this request must be escalated for human review."
+    },
+    "risk_assessment": {
+      "level": "MEDIUM",
+      "details": "RISK_LEVEL: MEDIUM  \nASSESSMENT: The return request is for a relatively high-value item without invoice or photo evidence, which raises moderate suspicion. However, the unopened condition and lack of previous returns reduce risk slightly. The reason \"Received duplicate gift\" is plausible but unverifiable."
+    },
+    "approval_route": "Human Review",
+    "final_decision": "MANAGER_REJECTED",
+    "customer_communication_draft": "Dear Customer,\n\nThank you for reaching out regarding your order ORD-7307. After careful consideration, we are unable to approve your refund request for the Coffee Grinder. \n\nWe appreciate your understanding and are here to assist with any other questions you may have.\n\nBest regards,  \nCustomer Support Team"
+  },
+  {
+    "request_id": "RET208",
+    "order_id": "ORD-7308",
+    "product": "Sketchbook Set",
+    "requested_amount": 1099,
+    "eligibility_findings": {
+      "failed_conditions": [],
+      "summary": "The return request RET208 for the Sketchbook Set meets all the eligibility requirements for automatic approval: the amount is below Rs.25,000, the request is within 30 days of delivery, the invoice is available, the item is unopened, and there is only 1 previous return in the last 90 days. There is no mention of a HIGH-risk concern, so this request is eligible for automatic approval."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The customer has one previous return in the last 90 days, which is not excessive. The item is unopened with invoice provided, and the return amount is moderate. No photo evidence is required given the return reason and condition, so risk is low."
+    },
+    "approval_route": "Automatic",
+    "final_decision": "AUTO_APPROVED",
+    "customer_communication_draft": "Dear Customer,  \n\nWe are pleased to inform you that your refund request for the 'Sketchbook Set' (order ORD-7308) has been approved. We will now proceed to the next step in the processing.  \n\nThank you for your patience and understanding.  \n\nBest regards,  \nCustomer Support Team"
+  },
+  {
+    "request_id": "RET209",
+    "order_id": "ORD-7309",
+    "product": "Smartwatch",
+    "requested_amount": 18900,
+    "eligibility_findings": {
+      "failed_conditions": [
+        "Item condition 'used' is not unopened or documented-damaged"
+      ],
+      "summary": "The return request RET209 does not meet the eligibility requirements for automatic approval because the item condition is \"used,\" which does not satisfy the policy condition that the item must be unopened or damaged with supporting photographs. Despite meeting all other criteria, this exception requires escalation for human review."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The return frequency is low with no previous returns in the last 90 days. Both invoice and photo evidence are provided, supporting the legitimacy of the claim. Despite the high value, the used condition and stated battery issue align with a reasonable refund request."
+    },
+    "approval_route": "Human Review",
+    "final_decision": "MANAGER_APPROVED",
+    "customer_communication_draft": "Dear Customer, \n\nWe are pleased to inform you that your refund request for the Smartwatch (order ORD-7309) has been approved. We will now proceed to the next step in the processing. \n\nThank you for your patience and understanding. \n\nBest regards,  \n[Your Company Name]"
+  },
+  {
+    "request_id": "RET210",
+    "order_id": "ORD-7310",
+    "product": "Floor Mirror",
+    "requested_amount": 12500,
+    "eligibility_findings": {
+      "failed_conditions": [],
+      "summary": "The return request RET210 for the Floor Mirror meets all automatic approval criteria: the amount is below Rs.25,000, the request is made within 30 days, the invoice is available, the item is damaged with photo evidence, there are no previous returns in the last 90 days, and no high-risk concerns are noted. Therefore, this replacement request is eligible for automatic approval under the return policy."
+    },
+    "risk_assessment": {
+      "level": "LOW",
+      "details": "RISK_LEVEL: LOW  \nASSESSMENT: The return request appears legitimate with invoice and photo evidence provided. The customer has no unusual return frequency and the reason given matches the item condition. Despite the relatively high value, the evidence supports approval."
+    },
+    "approval_route": "Automatic",
+    "final_decision": "AUTO_APPROVED",
+    "customer_communication_draft": "Dear Customer, \n\nThank you for reaching out regarding your Floor Mirror (order ORD-7310). Your replacement request has been approved and will now proceed to the next processing step. \n\nWe appreciate your patience and will keep you informed of any updates.  \n\nBest regards,  \n[Your Company Name]"
+  }
+]
