@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+!.env.example
+
+# Models and all model cache files
+models/
+
+# SQLite database
+trips.db
+*.db
+
+# Temporary dependency export
+requirements-current.txt
+
+# Test and cache files
+.pytest_cache/
+.coverage
+
+# IDE settings
+.idea/
+.vscode/
+
+# Logs
+*.log
